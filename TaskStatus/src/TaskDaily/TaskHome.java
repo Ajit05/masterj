@@ -17,9 +17,9 @@ public class TaskHome{
 	private JLabel logo;
 	private JPanel cpanel;
 	private JFrame mainFrame;
-	private void homeUI(){
+	public void homeUI(){
 		JFrame mainFrame = new JFrame();
-		mainFrame.setSize(500,450);
+		mainFrame.setSize(700,500);
 		mainFrame.setTitle("DAILY TASK REPORTING SYSTEM");
 		mainFrame.setResizable(true);
 		mainFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -36,6 +36,18 @@ public class TaskHome{
 		mainFrame.setVisible(true);
 		
 		reg.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+				mainFrame.setVisible(false);
+				TaskReg regObj = new TaskReg();
+				
+				
+			}
+		});
+		
+		login.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
